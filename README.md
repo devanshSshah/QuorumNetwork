@@ -1,6 +1,8 @@
 
 First you will need VAGRANT installed in your system. Then download the zip from the below given link:
-"https://drive.google.com/open?id=1XdN_c8KJfD8J2_59N25C6U8BXVPPh1W_ "
+```sh 
+https://drive.google.com/open?id=1XdN_c8KJfD8J2_59N25C6U8BXVPPh1W_
+```
 
 After extracting the folder, run `vagrant up` in a terminal in that folder. 
 After it is executed successfully, run the command `vagrant ssh` in the same folder.
