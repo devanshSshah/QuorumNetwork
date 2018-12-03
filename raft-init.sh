@@ -6,29 +6,32 @@ echo "[*] Cleaning up temporary data directories"
 rm -rf qdata
 mkdir -p qdata/logs
 
-echo "[*] Configuring node 1 (permissioned)"
-mkdir -p qdata/dd1/{keystore,geth}
-cp permissioned-nodes.json qdata/dd1/static-nodes.json
-cp permissioned-nodes.json qdata/dd1/
-cp keys/key1 qdata/dd1/keystore
-cp raft/nodekey1 qdata/dd1/geth/nodekey
-./bin/geth --datadir qdata/dd1 init genesis.json
+echo "[*] Configuring node A (permissioned)"
+echo "                                     "
+mkdir -p qdata/ddA/{keystore,geth}
+cp permissioned-nodes.json qdata/ddA/static-nodes.json
+cp permissioned-nodes.json qdata/ddA/
+cp keys/key1 qdata/ddA/keystore
+cp raft/nodekey1 qdata/ddA/geth/nodekey
+./bin/geth --datadir qdata/ddA init genesis.json
 
-echo "[*] Configuring node 2 (permissioned)"
-mkdir -p qdata/dd2/{keystore,geth}
-cp permissioned-nodes.json qdata/dd2/static-nodes.json
-cp permissioned-nodes.json qdata/dd2/
-cp keys/key2 qdata/dd2/keystore
-cp raft/nodekey2 qdata/dd2/geth/nodekey
-./bin/geth --datadir qdata/dd2 init genesis.json
+echo "[*] Configuring node B (permissioned)"
+echo "                                     "
+mkdir -p qdata/ddB/{keystore,geth}
+cp permissioned-nodes.json qdata/ddB/static-nodes.json
+cp permissioned-nodes.json qdata/ddB/
+cp keys/key2 qdata/ddB/keystore
+cp raft/nodekey2 qdata/ddB/geth/nodekey
+./bin/geth --datadir qdata/ddB init genesis.json
 
-echo "[*] Configuring node 3 (permissioned)"
-mkdir -p qdata/dd3/{keystore,geth}
-cp permissioned-nodes.json qdata/dd3/static-nodes.json
-cp permissioned-nodes.json qdata/dd3/
-cp keys/key3 qdata/dd3/keystore
-cp raft/nodekey3 qdata/dd3/geth/nodekey
-./bin/geth --datadir qdata/dd3 init genesis.json
+echo "[*] Configuring node C (permissioned)"
+echo "                                     "
+mkdir -p qdata/ddC/{keystore,geth}
+cp permissioned-nodes.json qdata/ddC/static-nodes.json
+cp permissioned-nodes.json qdata/ddC/
+cp keys/key3 qdata/ddC/keystore
+cp raft/nodekey3 qdata/ddC/geth/nodekey
+./bin/geth --datadir qdata/ddC init genesis.json
 
 
 
