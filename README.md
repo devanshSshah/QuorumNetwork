@@ -58,9 +58,9 @@ where you should replace this hash with the TransactionHash that was previously 
 Note the `v` field value of `"0x25"` or `"0x26"` (37 or 38 in decimal) which indicates this transaction has a private payload (input). 
 
 #### Checking the state of the contract
-For each of the 3 nodes we'll use the Geth JavaScript console to create a variable called `address` which we will assign to the address of the contract created by Node 1.  The contract address can be found in two ways:  
+For each of the 3 nodes we'll use the Geth JavaScript console to create a variable called `address` which we will assign to the address of the contract created by Node A.  The contract address can be found in two ways:  
 
-- In Node 1's log file: `QuorumNetwork/qdata/logs/1.log`
+- In Node A's log file: `QuorumNetwork/qdata/logs/1.log`
 - By reading the `contractAddress` param after calling `eth.getTransactionReceipt(txHash)` ([Ethereum API documentation](https://github.com/ethereum/wiki/wiki/JavaScript-API#web3ethgettransactionreceipt)) where `txHash` is the hash printed to the terminal after sending the transaction.
 
 Once you've identified the contract address, run the following command in each terminal:
