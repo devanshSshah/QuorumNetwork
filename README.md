@@ -21,9 +21,9 @@ We can inspect any of the Quorum nodes by using `geth attach` to open the Geth J
 It is recommended to use separate terminal windows for each node we are inspecting.  In each terminal, ensure you are in the `path/to/clonedRepo` directory, then:
 
 - If you aren't already running the example, in terminal 1 run `./raft-init.sh` followed by `./raft-start.sh`
-- In terminal 1 run `geth attach ipc:qdata/ddA/geth.ipc` to attach to node A
-- In terminal 2 run `geth attach ipc:qdata/ddB/geth.ipc` to attach to node B
-- In terminal 3 run `geth attach ipc:qdata/ddC/geth.ipc` to attach to node C
+- In terminal 1 run `./bin/geth attach ipc:qdata/ddA/geth.ipc` to attach to node A
+- In terminal 2 run `./bin/geth attach ipc:qdata/ddB/geth.ipc` to attach to node B
+- In terminal 3 run `./bin/geth attach ipc:qdata/ddC/geth.ipc` to attach to node C
 
 Now from the first terminal, outside the geth js console, run the following command: 
 ```sh
