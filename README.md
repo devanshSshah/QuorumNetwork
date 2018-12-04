@@ -1,5 +1,5 @@
 
-First you will need VAGRANT installed in your system. Then download the zip from the below given link:
+First you will need VAGRANT and Virtual Box installed in your system. Then download the zip from the below given link:
 ```sh 
 https://drive.google.com/open?id=1XdN_c8KJfD8J2_59N25C6U8BXVPPh1W_
 ```
