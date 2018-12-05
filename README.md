@@ -77,8 +77,7 @@ Next we'll use ```eth.contract``` to define a contract class with the simpleStor
 		"payable": false,
 		"stateMutability": "nonpayable",
 		"type": "function"
-	},
-	{
+	},{
 		"constant": false,
 		"inputs": [{"name": "_bidAmt","type": "uint256"}],
 		"name": "bid",
@@ -86,8 +85,7 @@ Next we'll use ```eth.contract``` to define a contract class with the simpleStor
 		"payable": false,
 		"stateMutability": "nonpayable",
 		"type": "function"
-	},
-	{
+	},{
 		"constant": false,
 		"inputs": [{"name": "_price","type": "uint256"}],
 		"name": "setItem",
@@ -95,8 +93,7 @@ Next we'll use ```eth.contract``` to define a contract class with the simpleStor
 		"payable": false,
 		"stateMutability": "nonpayable",
 		"type": "function"
-	},
-	{
+	},{
 		"constant": false,
 		"inputs": [{"name": "_address","type": "address"}],
 		"name": "getBid",
