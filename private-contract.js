@@ -8,8 +8,7 @@ var abi = [{       "constant": false,
 		"payable": false,
 		"stateMutability": "nonpayable",
 		"type": "function"
-	},
-	{
+	},{
 		"constant": false,
 		"inputs": [{"name": "_bidAmt","type": "uint256"}],
 		"name": "bid",
@@ -17,8 +16,7 @@ var abi = [{       "constant": false,
 		"payable": false,
 		"stateMutability": "nonpayable",
 		"type": "function"
-	},
-	{
+	},{
 		"constant": false,
 		"inputs": [{"name": "_price","type": "uint256"}],
 		"name": "setItem",
@@ -26,8 +24,7 @@ var abi = [{       "constant": false,
 		"payable": false,
 		"stateMutability": "nonpayable",
 		"type": "function"
-	},
-	{
+	},{
 		"constant": false,
 		"inputs": [{"name": "_address","type": "address"}],
 		"name": "getBid",
