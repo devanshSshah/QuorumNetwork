@@ -70,22 +70,24 @@ Once you've identified the contract address, run the following command in each t
 
 Next we'll use ```eth.contract``` to define a contract class with the simpleStorage ABI definition in each terminal:
 ```sh
-> var abi = [{
-		"constant": false,
+> var abi = [{       "constant": false,
 		"inputs": [],
 		"name": "getItemPrice",
 		"outputs": [{"name": "","type": "uint256"}],
 		"payable": false,
 		"stateMutability": "nonpayable",
 		"type": "function"
-	},{    
-		"constant": false,"inputs": [{"name": "_bidAmt","type": "uint256"}],
+	},
+	{
+		"constant": false,
+		"inputs": [{"name": "_bidAmt","type": "uint256"}],
 		"name": "bid",
 		"outputs": [],
 		"payable": false,
 		"stateMutability": "nonpayable",
 		"type": "function"
-	},{
+	},
+	{
 		"constant": false,
 		"inputs": [{"name": "_price","type": "uint256"}],
 		"name": "setItem",
@@ -93,9 +95,10 @@ Next we'll use ```eth.contract``` to define a contract class with the simpleStor
 		"payable": false,
 		"stateMutability": "nonpayable",
 		"type": "function"
-	},{     
-                "constant": false,
-		"inputs": [{"name": "_address",	"type": "address"}],
+	},
+	{
+		"constant": false,
+		"inputs": [{"name": "_address","type": "address"}],
 		"name": "getBid",
 		"outputs": [{"name": "","type": "uint256"}],
 		"payable": false,

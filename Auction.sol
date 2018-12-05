@@ -10,7 +10,7 @@ contract Auction {
   
   
   function setItem( uint _price){
-     require(msg.sender==companyA);
+     //require(msg.sender==companyA);
      itemPrice = _price;
   }
 
@@ -19,13 +19,13 @@ contract Auction {
   }
    
    function getBid(address _address) returns (uint){
-	    require(msg.sender == companyA);
+	//    require(msg.sender == companyA);
 	    return bids[_address];
   }
   
 
   function bid(uint _bidAmt) public {
-      require(msg.sender == companyB || msg.sender == companyC);
+      //require(msg.sender == companyB || msg.sender == companyC);
        bids[msg.sender] = _bidAmt;
     }
 
